@@ -1,40 +1,57 @@
-import About from "@/components/About";
-import HomeBlogSection from "@/components/Blog/HomeBlogSection";
-import CallToAction from "@/components/CallToAction";
-import Clients from "@/components/Clients";
-import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-import Faq from "@/components/Faq";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
-import Team from "@/components/Team";
-import Testimonials from "@/components/Testimonials";
-import { getAllPosts } from "@/utils/markdown";
-import { Metadata } from "next";
+import { Container } from "@/components/Container";
+import { Hero } from "@/components/Hero";
+import { SectionTitle } from "@/components/SectionTitle";
+import { Benefits } from "@/components/Benefits";
+import { Video } from "@/components/Video";
+import { Testimonials } from "@/components/Testimonials";
+import { Faq } from "@/components/Faq";
+import { Cta } from "@/components/Cta";
 
-export const metadata: Metadata = {
-  title: "Play Next.js - SaaS Starter Kit and Boilerplate for Next.js",
-  description: "Free Next.js SaaS Boilerplate and Starter Kit designed and built for SaaS startups. It comes with all necessary integrations, pages, and components you need to launch a feature-rich SaaS websites.",
-};
-
+import { benefitOne, benefitTwo } from "@/components/data";
 export default function Home() {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-
   return (
-    <main>
-      <ScrollUp />
+    <Container>
       <Hero />
-      <Features />
-      <About />
-      <CallToAction />
-      <Pricing />
+      <SectionTitle
+        preTitle="Nextly Benefits"
+        title=" Why should you use this landing page"
+      >
+        Nextly is a free landing page & marketing website template for startups
+        and indie projects. Its built with Next.js & TailwindCSS. And its
+        completely open-source.
+      </SectionTitle>
+
+      <Benefits data={benefitOne} />
+      <Benefits imgPos="right" data={benefitTwo} />
+
+      <SectionTitle
+        preTitle="Watch a video"
+        title="Learn how to fullfil your needs"
+      >
+        This section is to highlight a promo or demo video of your product.
+        Analysts says a landing page with video has 3% more conversion rate. So,
+        don&apos;t forget to add one. Just like this.
+      </SectionTitle>
+
+      <Video videoId="fZ0D0cnR88E" />
+
+      <SectionTitle
+        preTitle="Testimonials"
+        title="Here's what our customers said"
+      >
+        Testimonials is a great way to increase the brand trust and awareness.
+        Use this section to highlight your popular customers.
+      </SectionTitle>
+
       <Testimonials />
+
+      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
+        Answer your customers possible questions here, it will increase the
+        conversion rate as well as support or chat requests.
+      </SectionTitle>
+
       <Faq />
-      <Team />
-      <HomeBlogSection posts={posts} />
-      <Contact />
-      <Clients />
-    </main>
+      <Cta />
+    </Container>
   );
 }
