@@ -8,6 +8,8 @@ import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
+
+
 export default function Home() {
   return (
     <Container>
