@@ -20,8 +20,8 @@ export function Footer() {
                 <Image
                   src="/img/logoconsorcio.png"
                   alt="N"
-                  width="122"
-                  height="120"
+                  width="300"
+                  height="300"
                   className="w-48"
                 />
 
@@ -77,7 +77,7 @@ export function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()} Consorcio ciudad de Loja
+          Copyright © {new Date().getFullYear()} <strong>Departamento desarrollo</strong> Consorcio ciudad de Loja
 
 
         </div>

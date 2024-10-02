@@ -1,22 +1,16 @@
 import Script from 'next/script';
 
-const Rutas = () => {
+const FacebookPageFeedMobile = () => {
   return (
     <>
       <div id="fb-root"></div>
-
-      <div>
-        <h1>Página de Rutas</h1>
-        <p>Aquí puedes encontrar información sobre noticias.</p>
-      </div>
-
       <div
         className="fb-page"
         data-href="https://www.facebook.com/CTUciudaddeloja"
         data-tabs="timeline"
-        data-width=""
-        data-height=""
-        data-small-header="false"
+        data-width="250" // Ancho para móviles
+        data-height="400"
+        data-small-header="true"
         data-adapt-container-width="true"
         data-hide-cover="true"
         data-show-facepile="true"
@@ -31,7 +25,6 @@ const Rutas = () => {
         </blockquote>
       </div>
 
-      {/* Añadiendo el script con el componente next/script */}
       <Script
         async
         defer
@@ -42,4 +35,4 @@ const Rutas = () => {
   );
 };
 
-export default Rutas;
+export default FacebookPageFeedMobile;
