@@ -119,9 +119,9 @@ export function PopupWidget() {
             >
               <DisclosurePanel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
-                  <h3 className="text-lg text-white">How can we help?</h3>
+                  <h3 className="text-lg text-white">¿Tienes alguna pregunta?</h3>
                   <p className="text-white opacity-50">
-                    We usually respond in a few hours
+                    Te responderemos lo más pronto posible
                   </p>
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
@@ -154,14 +154,14 @@ export function PopupWidget() {
                           htmlFor="full_name"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Full Name
+                          Nombre completo
                         </label>
                         <input
                           type="text"
                           id="full_name"
-                          placeholder="John Doe"
+                          placeholder="Registra tu nombre"
                           {...register("name", {
-                            required: "Full name is required",
+                            required: "Tu nombre es requerido",
                             maxLength: 80,
                           })}
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
@@ -182,19 +182,19 @@ export function PopupWidget() {
                           htmlFor="email"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Email Address
+                          Correo electrónico
                         </label>
                         <input
                           type="email"
                           id="email"
                           {...register("email", {
-                            required: "Enter your email",
+                            required: "Ingresa tu correo",
                             pattern: {
                               value: /^\S+@\S+$/i,
-                              message: "Please enter a valid email",
+                              message: "Ingresa un correo válido",
                             },
                           })}
-                          placeholder="you@company.com"
+                          placeholder="ingresa@tucorreo.com"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
                               ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -214,16 +214,16 @@ export function PopupWidget() {
                           htmlFor="message"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Your Message
+                          Mensaje
                         </label>
 
                         <textarea
                           rows={4}
                           id="message"
                           {...register("message", {
-                            required: "Enter your Message",
+                            required: "Ingresa tu mensaje",
                           })}
-                          placeholder="Your Message"
+                          placeholder="En esta sección coloca tu mensaje"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -264,7 +264,7 @@ export function PopupWidget() {
                               ></path>
                             </svg>
                           ) : (
-                            "Send Message"
+                            "Enviar mensaje"
                           )}
                         </button>
                       </div>
@@ -273,7 +273,7 @@ export function PopupWidget() {
                         id="result"
                       >
                         <span>
-                          Powered by{" "}
+                          {"Consorcio ciudad de Loja "}
                           <a
                             href="https://Web3Forms.com"
                             className="text-gray-600"
