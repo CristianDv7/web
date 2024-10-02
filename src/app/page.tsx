@@ -2,10 +2,9 @@ import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
-
-import { Testimonials } from "@/components/Testimonials";
+import Departamentos from '../components/departamentos';
 import { Faq } from "@/components/Faq";
-import { Cta } from "@/components/Cta";
+
 
 import { benefitOne, benefitTwo } from "@/components/data";
 
@@ -19,7 +18,7 @@ export default function Home() {
         title="SISTEMA DE PAGO ELECTRONICO"
       >
         Mediante tu tarjeta SITU puedes acceder a todas nuestras unidades así como a las paradas 
-        del corredor central. Visita nuestro cantón Loja y enamorate de la ciudad
+        del corredor central. Visita el cantón Loja y enamorate de nuestra ciudad.
       </SectionTitle>
 
       <Benefits data={benefitOne} />
@@ -28,14 +27,14 @@ export default function Home() {
   
 
       <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
+        preTitle="Trabajamos por mejorar"
+        title="Conoce a nuestro personal"
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        Departamentos y directiva del consorcio de transportistas urbanos ciudad de Loja.
       </SectionTitle>
 
-      <Testimonials />
+
+      <Departamentos />
 
       <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
@@ -43,7 +42,7 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
-      <Cta />
+      
     </Container>
   );
 }

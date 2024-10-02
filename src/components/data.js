@@ -1,57 +1,60 @@
 import {
   FaceSmileIcon,
-  ChartBarSquareIcon,
+  IdentificationIcon ,
+  UserGroupIcon,
   CursorArrowRaysIcon,
   DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
+  VideoCameraIcon,
+  MapIcon,
   SunIcon,
+  
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.png";
-import benefitTwoImg from "../../public/img/benefit-two.png";
+import benefitOneImg from "../../public/img/tarjetasitu.png";
+import benefitTwoImg from "../../public/img/portada.jpg";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "BENEFICIOS DE LA TARJETA SITU",
+  desc:"",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Pasaje electrónico",
+      desc: "Evita llevar monedas, ingresa al sistema de transporte urbano unicamente con tu tarjeta electrónica.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
+      title: "Seguridad",
+      desc: "Mediante el pago electrónico tus hijos familiares y amigos viajan más seguros.",
+      icon: <IdentificationIcon  />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Respaldo",
+      desc: "Registra tu tarjeta SITU para mantener seguro tu saldo electrónico.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "CONOCE NUESTRO SERVICIO DE TRANSPORTE",
+  desc: "Como Lojanos queremos brindarte la mejor calidad en servicio de transporte a un precio accecible con un viaje cómodo y seguro en nuestras unidades.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "13 RUTAS EN TODA LA CIUDAD",
+      desc: "Conectamos a toda la ciudad, casco central y sectores rurales. Movilizate en Loja con el transporte urbano.",
+      icon: <MapIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
+      title: "FLOTA DE 238 BUSES",
+      desc: "Plan de renovación de buses anual para ofrecer unidades con mayor tecnología, menor contaminación y mayor comodidad.",
+      icon: <UserGroupIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Sistema de monitoreo",
+      desc: "Buses y paradas del corredor central cuenta con cámaras de seguridad y seguimiento por GPS. Viaja seguro con nosotros. ",
+      icon: <VideoCameraIcon />,
     },
   ],
 };

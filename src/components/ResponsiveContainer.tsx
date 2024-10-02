@@ -12,7 +12,7 @@ const ResponsiveContainer = () => {
                 <div className="flex justify-center items-center border-4 
                     bg-gradient-to-r from-blue-900 to-gray-300 
                     dark:from-green-900 dark:to-gray-800 
-                    border-blue-900 dark:border-green-900 
+                    
                     p-1 rounded-lg shadow-2xl transition-transform transform w-full">
                     <FacebookVideo embedHtml={embedHtml} />
                 </div>
@@ -21,13 +21,13 @@ const ResponsiveContainer = () => {
                 <div className="flex justify-center w-full  ">
                     <div className="hidden md:block bg-gradient-to-r from-blue-900 to-gray-300 
                     dark:from-green-900 dark:to-gray-800 
-                    border-blue-900 dark:border-green-900 
+                   
                     p-1 rounded-lg shadow-2xl border-4 ">
                         <FacebookPageFeedDesktop />
                     </div>
                     <div className="block md:hidden bg-gradient-to-r from-blue-900 to-gray-300 
                     dark:from-green-900 dark:to-gray-800 
-                    border-blue-900 dark:border-green-900 
+                    
                     p-1 rounded-lg shadow-2xl border-4">
                         <FacebookPageFeedMobile />
                     </div>

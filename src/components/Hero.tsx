@@ -19,7 +19,7 @@ export const Hero = () => {
                 overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
                 dark:from-green-900 dark:to-gray-800 
-                border-blue-900 dark:border-green-900 
+                
                 p-1 rounded-lg shadow-2xl transition-transform transform">
         <ImageSlider />
       </div>
@@ -35,8 +35,6 @@ export const Hero = () => {
           <div className="text-4xl font-extrabold text-center text-gray-800 dark:text-white mt-6 mb-4">
             Empresas que conforman el consorcio ciudad de Loja
           </div>
-
-
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around mb-8 bg-gray-100 dark:bg-gray-800 border border-gray-500 dark:border-gray-700 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
             <div className="overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
