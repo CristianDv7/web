@@ -14,27 +14,26 @@ export const Testimonials = () => {
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              Con el fin de mejorar la seguridad y el servicio se ha desarrollado accesos automatizados en paradas de poca afluencia en el corredor central.
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Paradas automatizadas"
+              title="Departamento desarrollo"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+             Cooperacion entre el consorcio ciudad de Loja y el Banco de Loja para dar beneficios a los socios
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Prestamos y Créditos"
+              title="Directiva CTUCL"
             />
           </div>
         </div>
