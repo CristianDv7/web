@@ -22,7 +22,7 @@ const FacebookPageFeed: React.FC<FacebookPageFeedProps> = ({ pageUrl }) => {
         var js,
           fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s) as HTMLScriptElement; // Asegúrate de que js es un HTMLScriptElement
+        js = d.createElement(s) as HTMLScriptElement;
         js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk.js';
         fjs.parentNode?.insertBefore(js, fjs);
@@ -31,7 +31,7 @@ const FacebookPageFeed: React.FC<FacebookPageFeedProps> = ({ pageUrl }) => {
   }, []);
 
   return (
-    <div className="facebook-page-feed">
+    <div className="facebook-page-feed w-full overflow-hidden">
       <div id="fb-root"></div>
       <div
         className="fb-page"
