@@ -5,7 +5,7 @@ const departamentos = [
   {
     title: 'Credencialización',
     description: 'Descripción breve del departamento 1.',
-    image: '/img/departamento1.jpg', // Cambiar a /img/
+    image: '/img/contabilidad.png', // Cambiar a /img/
   },
   {
     title: 'Taller',
@@ -25,7 +25,7 @@ const departamentos = [
   {
     title: 'Desarrollo',
     description: 'Descripción breve del departamento 5.',
-    image: '/img/departamento5.jpg',
+    image: '/img/contabilidad.png',
   },
   {
     title: 'Monitoreo',
@@ -35,7 +35,7 @@ const departamentos = [
   {
     title: 'SIR',
     description: 'Sistema interno de reacuado.',
-    image: '/img/departamento7.jpg',
+    image: '/img/contabilidad.png',
   },
   {
     title: 'Directivos 2024 ',

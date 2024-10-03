@@ -18,7 +18,7 @@ export const Hero = () => {
       <div className="w-full max-w-[1900px] mx-auto min-h-[80px] md:min-h-[400px] lg:min-h-[430px] 
                 overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
-                dark:from-green-900 dark:to-gray-800 
+                dark:from-green-900 dark:to-gray-300 
                 
                 p-1 rounded-lg shadow-2xl transition-transform transform">
         <ImageSlider />
@@ -38,28 +38,28 @@ export const Hero = () => {
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around mb-8 bg-gray-100 dark:bg-gray-800 border border-gray-500 dark:border-gray-700 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
             <div className="overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
-                dark:from-green-900 dark:to-gray-800 
+                dark:from-green-900 dark:to-gray-300 
                 border-blue-900 dark:border-green-900 
                 p-1 rounded-lg shadow-2xl transition-transform transform">
               <F_urbasur />
             </div>
             <div className="overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
-                dark:from-green-900 dark:to-gray-800 
+                dark:from-green-900 dark:to-gray-300 
                 border-blue-900 dark:border-green-900 
                 p-1 rounded-lg shadow-2xl transition-transform transform">
               <F_mayo24 />
             </div>
             <div className="overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
-                dark:from-green-900 dark:to-gray-800 
+                dark:from-green-900 dark:to-gray-300 
                 border-blue-900 dark:border-green-900 
                 p-1 rounded-lg shadow-2xl transition-transform transform">
               <F_cuxibamba />
             </div>
             <div className="overflow-hidden border-4 
                 bg-gradient-to-r from-blue-900 to-gray-300 
-                dark:from-green-900 dark:to-gray-800 
+                dark:from-green-900 dark:to-gray-300 
                 border-blue-900 dark:border-green-900 
                 p-1 rounded-lg shadow-2xl transition-transform transform">
               <F_urbaexpress />

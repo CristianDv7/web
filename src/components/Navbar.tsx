@@ -2,7 +2,7 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Menu } from "@headlessui/react";
 
 export const Navbar = () => {
   const navigation = [
@@ -11,6 +11,12 @@ export const Navbar = () => {
     { name: "RUTAS", href: "/rutas" },
     { name: "RECARGAS", href: "/recargas" },
     { name: "QUIENES SOMOS", href: "/quienes-somos" },
+  ];
+
+  const noticiasSubmenu = [
+    { name: "Últimas noticias", href: "/noticias/ultimas" },
+    { name: "Noticias locales", href: "/noticias/locales" },
+    { name: "Noticias internacionales", href: "/noticias/internacionales" },
   ];
 
   return (
@@ -22,9 +28,9 @@ export const Navbar = () => {
             <span>
               <Image
                 src="/img/logoconsorcio.png"
-                width={300} // Cambia esto al tamaño deseado
-                height={100} // Cambia esto al tamaño deseado
-                alt="N"
+                width={300}
+                height={100}
+                alt="Logo Consorcio"
                 className="w-50"
               />
             </span>
@@ -35,8 +41,11 @@ export const Navbar = () => {
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
           <ThemeChanger />
           <div className="hidden mr-3 lg:flex nav__item">
-            <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
+            <Link
+              href="https://sistema.kbus.kradac.com/consorcio/tarjeta/situ/"
+              className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+            >
+              Consultar saldo
             </Link>
           </div>
         </div>
@@ -78,9 +87,6 @@ export const Navbar = () => {
                     {item.name}
                   </Link>
                 ))}
-                <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
-                  Get Started
-                </Link>
               </Disclosure.Panel>
             </>
           )}
@@ -90,15 +96,39 @@ export const Navbar = () => {
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((item, index) => (
-              <li className="flex items-center" key={index}>
-                <Link
-                  href={item.href}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
-                >
-                  {item.name}
-                </Link>
+              <li className="flex items-center relative" key={index}>
+                {item.name === "NOTICIAS" ? (
+                  <Menu as="div" className="relative inline-block text-left">
+                    <Menu.Button className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                      {item.name}
+                    </Menu.Button>
 
-                {/* Agregar un separador entre los elementos excepto después del último */}
+                    <Menu.Items className="absolute left-0 z-10 mt-2 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg w-44 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      {noticiasSubmenu.map((submenu, i) => (
+                        <Menu.Item key={i}>
+                          {({ active }) => (
+                            <Link
+                              href={submenu.href}
+                              className={`${
+                                active ? "bg-indigo-500 text-white" : "text-gray-700"
+                              } block px-4 py-2 text-sm`}
+                            >
+                              {submenu.name}
+                            </Link>
+                          )}
+                        </Menu.Item>
+                      ))}
+                    </Menu.Items>
+                  </Menu>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  >
+                    {item.name}
+                  </Link>
+                )}
+
                 {index < navigation.length - 1 && (
                   <span className="mx-2 border-l border-gray-300 dark:border-gray-600 h-6"></span>
                 )}
