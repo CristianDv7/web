@@ -14,7 +14,7 @@ export const Navbar = () => {
   ];
 
   const noticiasSubmenu = [
-    { name: "Últimas noticias", href: "/noticias/ultimas" },
+    { name: "Últimas noticias", href: "/noticias" },
     { name: "Noticias locales", href: "/noticias/locales" },
     { name: "Noticias internacionales", href: "/noticias/internacionales" },
   ];

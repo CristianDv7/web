@@ -1,6 +1,15 @@
+"use client";
 import Script from 'next/script';
+import { useEffect } from 'react';
 
 const Rutas = () => {
+  useEffect(() => {
+    // Verifica si el script de Facebook se ha cargado
+    if (window.FB) {
+      window.FB.XFBML.parse(); // Reparsea el contenido de Facebook
+    }
+  }, []);
+
   return (
     <>
       <div id="fb-root"></div>

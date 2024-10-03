@@ -25,7 +25,7 @@ export const Hero = () => {
       </div>
 
       <Container>
-        <div className="flex justify-center "> {/* Asegúrate de centrar el contenedor */}
+        <div className=""> {/* Asegúrate de centrar el contenedor */}
           <ResponsiveContainer />
         </div>
       </Container>

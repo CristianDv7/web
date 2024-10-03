@@ -1,12 +1,18 @@
-// src/app/pages/rutas/page.tsx
-const Rutas = () => {
-    return (
-      <div>
-        <h1>Página de Rutas</h1>
-        <p>Aquí puedes encontrar información sobre recargas.</p>
+// src/app/page.tsx
+import PuntosRecarga from '@/components/PuntosRecarga';
+
+const Page = () => {
+  return (
+    <div>
+      {/* Suponiendo que tienes un Navbar aquí */}
+   
+
+      {/* Añadiendo margen superior al componente PuntosRecarga */}
+      <div className="mt-8 "> {/* Ajusta mt-8 según necesites */}
+        <PuntosRecarga />
       </div>
-    );
-  };
-  
-  export default Rutas;
-  
+    </div>
+  );
+};
+
+export default Page;
